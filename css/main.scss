@@ -137,10 +137,10 @@ ul {
             content: '';
             position: absolute;
             width: 3px;
-            height: 25px;
+            height: 22px;
             background-color: white;
-            left: -100px;
-            top: 0;
+            left: -80px;
+            top: -10px;
         }
 
         &::before {
@@ -246,6 +246,7 @@ ul {
             top: 50%;
             right: 20px;
             transform: translateY(-50%);
+            cursor: pointer;
         }
     }
 }
@@ -287,8 +288,11 @@ ul {
 
             li {
                 color: #ffffff;
-                opacity: .8;
                 margin-top: 20px;
+
+                p {
+                    opacity: .8;
+                }
             }
         }
 

@@ -152,10 +152,10 @@ ul {
   content: '';
   position: absolute;
   width: 3px;
-  height: 25px;
+  height: 22px;
   background-color: white;
-  left: -100px;
-  top: 0;
+  left: -80px;
+  top: -10px;
 }
 
 .carousel-icon::before {
@@ -288,6 +288,7 @@ ul {
   right: 20px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  cursor: pointer;
 }
 
 .case-container {
@@ -340,8 +341,11 @@ ul {
 
 .case-container .case-item__list li {
   color: #ffffff;
-  opacity: .8;
   margin-top: 20px;
+}
+
+.case-container .case-item__list li p {
+  opacity: .8;
 }
 
 .case-container .case-item__footer {
