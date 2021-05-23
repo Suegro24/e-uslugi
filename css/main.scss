@@ -37,6 +37,12 @@ ul {
     }
 }
 
+.sticky {
+    position: fixed !important;
+    top: 0;
+    z-index: 1000;
+}
+
 .header {
     width: 100vw;
     &__top {
@@ -46,6 +52,7 @@ ul {
     }
 
     &__navbar {
+        position: absolute;
         background-color: $blue;
 
         .container {
@@ -114,12 +121,17 @@ ul {
             color: white;
             margin-right: 20px;
             cursor: pointer;
+            padding: 6px 16px;
 
             &--active {
                 color: $blue;
                 background-color: white;
-                padding: 6px 16px;
                 font-weight: 700;
+            }
+
+            &:hover {
+                color: $blue;
+                background-color: white;
             }
         }
     }
@@ -127,7 +139,7 @@ ul {
 }
 
 .carousel {
-    margin: 30px 0 0 0;
+    margin: 115px 0 0 0;
     width: 100%;
 
     &-icon {

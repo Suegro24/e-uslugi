@@ -34,6 +34,12 @@ ul {
   font-weight: 700 !important;
 }
 
+.sticky {
+  position: fixed !important;
+  top: 0;
+  z-index: 1000;
+}
+
 .header {
   width: 100vw;
 }
@@ -49,6 +55,7 @@ ul {
 }
 
 .header__navbar {
+  position: absolute;
   background-color: #0889d9;
 }
 
@@ -130,17 +137,22 @@ ul {
   color: white;
   margin-right: 20px;
   cursor: pointer;
+  padding: 6px 16px;
 }
 
 .navbar__list-item--active {
   color: #0889d9;
   background-color: white;
-  padding: 6px 16px;
   font-weight: 700;
 }
 
+.navbar__list-item:hover {
+  color: #0889d9;
+  background-color: white;
+}
+
 .carousel {
-  margin: 30px 0 0 0;
+  margin: 115px 0 0 0;
   width: 100%;
 }
 
