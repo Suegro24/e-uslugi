@@ -58,6 +58,7 @@ ul {
         .container {
             display: flex;
             justify-content: flex-start;
+            align-items: center;
             padding: 20px 0;
         }
     }
@@ -74,6 +75,7 @@ ul {
             margin: 0 15px;
             cursor: pointer;
             font-weight: 500;
+            text-align: center;
 
             &--red {
                 color: #f16e16;
@@ -134,6 +136,10 @@ ul {
                 background-color: white;
             }
         }
+    }
+
+    &-mobile {
+        display: none;
     }
 
 }
@@ -437,6 +443,23 @@ ul {
         &__top {
             flex-wrap: wrap;
         }
+
+        &__navbar {
+            .container {
+                // max-width: unset;
+            }
+        }
+    }
+
+    .navbar {
+        &__list {
+            width: 100%;
+            justify-content: space-between;
+
+            &-item {
+                margin: 0;
+            }
+        }
     }
 
     .case-container {
@@ -493,6 +516,46 @@ ul {
                 li {
                     width: 500px;
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        &-desktop {
+            display: none;
+        }
+
+        &__image {
+            display: none;
+        }
+
+        &-mobile {
+            display: flex;
+            justify-content: flex-end;
+
+            &__list-item {
+                text-align: right;
+            }
+
+            button {
+                border: none;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .header {
+        &__navbar {
+            z-index: 1000;
+
+            .container {
+                max-width: unset;
+                justify-content: flex-end;
             }
         }
     }
